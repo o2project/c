@@ -67,6 +67,10 @@
     }
 }
 
+.o2p-book-copy {
+    font-size: 1.2rem;
+}
+
 .o2p-book-cover,
 .o2p-book-detail {
     margin: 1rem 0;

@@ -3,6 +3,11 @@
     color: #fff;
 }
 
+.fb-like > span {
+  /* F*ck Facebook */
+  vertical-align: 0 !important;
+}
+
 #o2p-header .nav-item .nav-link:hover,
 #o2p-header .nav-item .nav-link:focus {
     text-decoration: underline;

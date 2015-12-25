@@ -82,7 +82,7 @@
 }
 
 @media (min-width: 544px) {
-    [class^=o2p-sns-button-] {
+    .o2p-sns-buttons [class^=o2p-sns-button-] {
         display: inline-block;
     }
 }

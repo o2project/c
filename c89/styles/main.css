@@ -8,6 +8,16 @@
     text-decoration: underline;
 }
 
+@media (min-width: 544px) {
+    #ll-contents {
+        margin-bottom: 3rem;
+    }
+}
+
+#ll-footer {
+    border-top: 1px solid #ccc;
+}
+
 .bd-pageheader {
     padding: 2rem .9375rem;
     margin-bottom: 1.5rem;

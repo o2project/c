@@ -1,18 +1,51 @@
-#ll-header {
-    background-color: #003760;
-}
-
-#ll-header .navbar-brand {
-    color: #fff;
-}
-
-#ll-header .nav-item .nav-link {
-    color: #fff;
-}
-
 #ll-header .nav-item .nav-link:hover,
 #ll-header .nav-item .nav-link:focus {
     text-decoration: underline;
+}
+
+.bd-pageheader {
+    padding: 2rem .9375rem;
+    margin-bottom: 1.5rem;
+    background-color: #003760;
+    color: #fff;
+    text-align: center;
+}
+
+.bd-pageheader h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.bd-pageheader p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media (min-width: 544px) {
+    .bd-pageheader {
+        padding-top:4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-pageheader h1 {
+        font-size:4rem
+    }
+
+    .bd-pageheader p {
+        font-size: 1.5rem
+    }
+}
+
+@media (min-width: 992px) {
+    .bd-pageheader h1,
+    .bd-pageheader p {
+        margin-right: 380px;
+    }
 }
 
 .ll-book-cover,

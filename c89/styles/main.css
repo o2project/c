@@ -70,11 +70,21 @@
 .o2p-sns-buttons {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 1rem;
 }
 
-.o2p-sns-buttons li {
-    display: inline-block;
+[class^=o2p-sns-button-] {
     padding: 0 5px;
+}
+
+[class^=o2p-sns-button-]:not([class=o2p-sns-button-line]) {
+    display: none;
+}
+
+@media (min-width: 544px) {
+    [class^=o2p-sns-button-] {
+        display: inline-block;
+    }
 }
 
 .o2p-book-copy {

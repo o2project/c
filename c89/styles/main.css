@@ -58,6 +58,13 @@
     margin: 1rem 0;
 }
 
+@media (min-width: 544px) {
+    .ll-book-cover,
+    .ll-book-detail {
+        margin: 0;
+    }
+}
+
 .ll-book-cover {
     max-width: 600px;
     padding: 0;

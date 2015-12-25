@@ -29,10 +29,11 @@ function clean {
 }
 
 function build {
-    cp -r $PROJECT_ROOT/c89 $BUILD_DIR/c89
-    rm -rf .bowerrc
-    rm -rf bower.json
-    rm -rf package.json
+    rm -rf $BUILD_DIR/c89
+    cp -a $PROJECT_ROOT/c89 $BUILD_DIR/c89
+    rm -rf $BUILD_DIR/c89/.bowerrc
+    rm -rf $BUILD_DIR/c89/bower.json
+    rm -rf $BUILD_DIR/c89/package.json
 }
 
 function push_to_branch {

@@ -67,6 +67,16 @@
     }
 }
 
+.o2p-sns-buttons {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.o2p-sns-buttons li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
 .o2p-book-copy {
     font-size: 1.2rem;
 }

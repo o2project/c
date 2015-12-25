@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-- '5.3'
+  - '5.3'
 
 sudo: false
 
@@ -21,7 +21,8 @@ env:
 before_install:
 
 script:
+  - echo "no test specified"
 
 after_success:
-- '[ "$TRAVIS_BRANCH" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [
   "$GH_TOKEN" ] && ./deploy-to-gh-pages.sh > /dev/null'

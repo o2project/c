@@ -29,7 +29,7 @@ function clean {
 }
 
 function build {
-    cp -r $PROJECT_ROOT/c89/* $BUILD_DIR
+    cp -r $PROJECT_ROOT/c89 $BUILD_DIR/c89
     rm -rf .bowerrc
     rm -rf bower.json
     rm -rf package.json

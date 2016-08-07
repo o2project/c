@@ -1,0 +1,26 @@
+{
+  "name": "o2project-c90",
+  "version": "0.1.0",
+  "description": "C90向け特設サイト",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/o2project/c.git"
+  },
+  "keywords": [
+    "comiket"
+  ],
+  "author": "kubosho <ta2@o2p.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o2project/c/issues"
+  },
+  "homepage": "https://github.com/o2project/c#readme",
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "kotori": "^0.8.1"
+  }
+}

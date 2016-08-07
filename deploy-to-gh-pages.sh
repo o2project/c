@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly REPOSITORY="https://$GH_TOKEN@github.com/o2project/c.git"
+readonly REPOSITORY="git@github.com:o2project/c.git"
 readonly PROJECT_ROOT=`git rev-parse --show-toplevel`
 readonly BUILD_DIR=$PROJECT_ROOT/build
 readonly PUBLISH_BRANCH='gh-pages'
@@ -29,11 +29,12 @@ function clean {
 }
 
 function build {
-    rm -rf $BUILD_DIR/c89
+    rm -rf $BUILD_DIR/c*
     cp -a $PROJECT_ROOT/c89 $BUILD_DIR/c89
-    rm -rf $BUILD_DIR/c89/.bowerrc
-    rm -rf $BUILD_DIR/c89/bower.json
-    rm -rf $BUILD_DIR/c89/package.json
+    cp -a $PROJECT_ROOT/c90 $BUILD_DIR/c90
+    rm -rf $BUILD_DIR/c*/.bowerrc
+    rm -rf $BUILD_DIR/c*/bower.json
+    rm -rf $BUILD_DIR/c*/package.json
 }
 
 function push_to_branch {

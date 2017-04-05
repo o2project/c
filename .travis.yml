@@ -1,14 +1,9 @@
 language: node_js
-
-node_js:
-  - 'stable'
-
+node_js: stable
 sudo: false
-
 cache:
   directories:
   - node_modules
-
 env:
   global:
   - export LC_CTYPE=ja_JP.UTF-8
@@ -16,13 +11,16 @@ env:
   - GIT_COMMITTER_EMAIL=ta2@o2p.jp
   - GIT_AUTHOR_NAME=kubosho_
   - GIT_AUTHOR_EMAIL=ta2@o2p.jp
-  - secure: qYOCwF2vPay1kuvnszdxX4wPwEFfjzVxE7XVGz7VyE/K1P0Gi/p9jEeAebj+zFpt9lr+i2EFgyHDGjD7pcU4/F+gmPBXfpfanVNG7jykGRyLiOpe6MeE1uai1HGVn5zyHyvTu8+kbBfiYxn1RwiNAms/d3EJXyYZAE4ci1byalexGp2dUrKizQCHV6uH2Kf2EMnWWawwnnxdonCiI2aA7mImofd/lay6EuiGxXQK2BlPmLDcas2FHJ1Aq5Z6TQmBhPtirquVRG/yBhAKzxVRECr06vmIN1RaXYzDqZDtb84JiaPmgelUy+ZRocgHvVSHWuVxnIBqLGi5KChEfe1pG953J1Rox72pkc7vjfR37mpGGBa4a+7ZA9Fo/1IEEfXSGrnKCb01YVTZoL/H4bl7gQXaFL3M4JRsD5jZPbWitvypy1hG68fDY8M+MzRLwuYGLIURoaNxdpF74VhecAQpY44LWKuKGFg7DtN4jXOqHBzW1LXKYgp9ldw7sVY65CD5ruQniv7tnk/klXDHzHyXy2WQmh0ztbOQtYdKIzT/D+etF79PVAQtCf/GGccb4IF91SDymGCAqfcNEyqU1mw2Ha4xO/DdmfiwXYW/fIa4ZpdCTmoD2tklQndr98MTBT9wXke+hJSygybn7O38aKmVjDJwPIzLcCgcA0qQ2vGaaVg=
-
-before_install:
-
-script:
-  - echo "no test specified"
-
+before_install: openssl aes-256-cbc -K $encrypted_19d31b446274_key -iv $encrypted_19d31b446274_iv -in github_deploy_key.enc -out github_deploy_key -d
+script: echo "no test specified"
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [
-  "$GH_TOKEN" ] && ./deploy-to-gh-pages.sh > /dev/null'
+  - |
+      $(npm bin)/set-up-ssh --key "$encrypted_19d31b446274_key" \
+                            --iv "$encrypted_19d31b446274_iv" \
+                            --path-encrypted-key ".travis/github_deploy_key.enc"
+
+      $(npm bin)/update-branch --commands "npm run build" \
+                               --commit-message "Update website [skip ci]" \
+                               --directory "./public" \
+                               --distribution-branch "gh-pages" \
+                               --source-branch "master"

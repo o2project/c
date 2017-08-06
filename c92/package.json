@@ -1,0 +1,31 @@
+{
+  "name": "o2project-c92",
+  "version": "1.0.0",
+  "description": "C92向け特設サイト",
+  "main": "scripts/index.js",
+  "scripts": {
+    "build": "./bin/css-build.js",
+    "test": "stylelint src/**/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/o2project/c.git"
+  },
+  "keywords": [
+    "comiket"
+  ],
+  "author": "kubosho <ta2@o2p.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o2project/c/issues"
+  },
+  "homepage": "https://github.com/o2project/c#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "postcss": "^6.0.8",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^10.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  }
+}

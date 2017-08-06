@@ -3,6 +3,7 @@
   --light-text-color: #fcfcfc;
   --main-color: #003760;
   --sub-color: #dfdfdf;
+  --accent-color: #ad002d;
 }
 
 ::selection {
@@ -71,11 +72,37 @@
 }
 
 .book-header h1 {
+  align-items: center;
+  display: flex;
   margin: 0;
 }
 
 .book-header p {
   margin: 0;
+}
+
+.book-tag {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  padding: 0.1rem;
+}
+
+.book-tag-new {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.book-tag-already {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.book-tag-techbookfest {
+  border-color: #4caf50;
+  color: #4caf50;
 }
 
 .book-content {

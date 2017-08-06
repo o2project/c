@@ -232,6 +232,7 @@ table{
 
 .book-detail th{
   border-left:0.5rem solid var(--main-color);
+  width:6rem;
   text-align:left;
   padding:0.31rem 0.5rem;
 }

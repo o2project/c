@@ -9,7 +9,7 @@
   <link href="styles/main.css" rel="stylesheet">
   <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async></script>
   <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5" id="facebook-jssdk" async></script>
-  <script src="//media.line.me/js/line-button.js?v=20140411" async></script>
+  <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -179,15 +179,13 @@
         </div>
       </li>
       <li class="sns-button-line">
-        <script>
-          setTimeout(() => (
-            new media_line_me.LineButton({
-              pc: true,
-              lang: "ja",
-              type: "a"
-            })
-          ), 500);
-        </script>
+        <div
+          class="line-it-button"
+          data-lang="ja"
+          data-type="share-a"
+          data-url="https://media.line.me/ja/how_to_install"
+          style="display: none;"
+        ></div>
       </li>
     </ul>
   </main>

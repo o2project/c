@@ -1,0 +1,25 @@
+{
+  "name": "o2project-tbf02",
+  "description": "技術書典2向け特設サイト",
+  "main": "scripts/index.js",
+  "authors": [
+    "kubosho <ta2@o2p.jp>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "comiket"
+  ],
+  "homepage": "https://github.com/o2project/c",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6"
+  }
+}

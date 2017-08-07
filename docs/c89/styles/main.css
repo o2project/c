@@ -1,0 +1,127 @@
+::selection {
+    background-color: #003760;
+    color: #fff;
+}
+
+.fb-like > span {
+  /* F*ck Facebook */
+  vertical-align: 0 !important;
+}
+
+#o2p-header .nav-item .nav-link:hover,
+#o2p-header .nav-item .nav-link:focus {
+    text-decoration: underline;
+}
+
+@media (min-width: 544px) {
+    #o2p-contents {
+        margin-bottom: 3rem;
+    }
+}
+
+#o2p-footer {
+    border-top: 1px solid #ccc;
+}
+
+#o2p-footer .nav-item {
+    margin-top: 1rem;
+}
+
+.bd-pageheader {
+    padding: 2rem .9375rem;
+    margin-bottom: 1.5rem;
+    background-color: #003760;
+    color: #fff;
+    text-align: center;
+}
+
+.bd-pageheader h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.bd-pageheader p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media (min-width: 544px) {
+    .bd-pageheader {
+        padding-top:4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-pageheader h1 {
+        font-size:4rem
+    }
+
+    .bd-pageheader p {
+        font-size: 1.5rem
+    }
+}
+
+@media (min-width: 992px) {
+    .bd-pageheader h1,
+    .bd-pageheader p {
+        margin-right: 380px;
+    }
+}
+
+.o2p-sns-buttons {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+[class^=o2p-sns-button-] {
+    padding: 0 5px;
+}
+
+[class^=o2p-sns-button-]:not([class=o2p-sns-button-line]) {
+    display: none;
+}
+
+@media (min-width: 544px) {
+    .o2p-sns-buttons [class^=o2p-sns-button-] {
+        display: inline-block;
+    }
+}
+
+.o2p-book-copy {
+    font-size: 1.2rem;
+}
+
+.o2p-book-cover,
+.o2p-book-detail {
+    margin: 1rem 0;
+}
+
+@media (min-width: 544px) {
+    .o2p-book-cover,
+    .o2p-book-detail {
+        margin: 0;
+    }
+}
+
+.o2p-book-cover {
+    max-width: 600px;
+    padding: 0;
+    border: 1px solid #333;
+}
+
+.o2p-book-cover img {
+    max-width: 100%;
+}
+
+.o2p-book-detail th {
+    white-space: nowrap;
+}
+
+.o2p-book-table-of-contents {
+    padding-left: 1.2rem;
+}

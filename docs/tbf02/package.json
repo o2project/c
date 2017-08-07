@@ -1,0 +1,26 @@
+{
+  "name": "o2project-tbf02",
+  "version": "0.1.0",
+  "description": "技術書典2向け特設サイト",
+  "main": "scripts/index.js",
+  "scripts": {
+    "setup": "npm install && bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/o2project/c.git"
+  },
+  "keywords": [
+    "techbookfest"
+  ],
+  "author": "kubosho <ta2@o2p.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o2project/c/issues"
+  },
+  "homepage": "https://github.com/o2project/c#readme",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

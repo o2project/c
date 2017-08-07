@@ -1,0 +1,13 @@
+/**
+ * Prevent font size adjustments after orientation changes in iOS.
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Remove margin in all browsers
+ */
+body {
+  margin: 0;
+}
